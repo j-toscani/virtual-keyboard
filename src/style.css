@@ -5,6 +5,8 @@
 html {
   box-sizing: border-box;
   font-family: monospace;
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
 body {
@@ -20,11 +22,22 @@ body {
 input {
   padding: 0.25rem 0.5rem;
   font-size: 1rem;
+  margin:0;
 }
 
 button {
+  font-size: inherit;
+  display: inline-block;
+  aspect-ratio: 1;
   width: 2rem;
-  height: 2rem,
+  min-height: 0;
+  border: 1px solid gray;
+  background-color: white;
+  border-radius: 0.25rem;
+}
+
+button:hover {
+  background-color:aquamarine;
 }
 
 #keyboard {
